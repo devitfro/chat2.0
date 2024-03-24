@@ -1,0 +1,49 @@
+.User-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* border: 1px solid pink; */
+   padding: 10px;
+}
+.User-container:hover {
+   background-color: #313338;
+   border-radius: 5px;
+   .User-item {
+      color: white;
+   }
+   .Close-icon {
+      visibility: visible;
+   }
+}
+.User-icon {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+.User-item {
+   margin-left: 20px;
+   text-align: center;
+   list-style: none;
+   text-align: center;
+   font-size: 18px;
+   color: #b5bac1;
+}
+.User-container-visible {
+   /* border: 1px solid orange; */
+   display: flex;
+   flex: 0 1 70%;
+   align-items: center;
+}
+.Close-icon {
+   display: block;
+   flex: 0 1 10%;
+   visibility: hidden;
+   /* border: 1px solid red; */
+}
+.User-container.selected {
+   background-color: #404249;
+   border-radius: 5px;
+   .Close-icon {
+      visibility: visible;
+   }
+}

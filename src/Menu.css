@@ -1,0 +1,30 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.Header-menu {
+   width: 500px;
+   display: flex;
+   padding: 0 10px;
+   margin: 0;
+}
+.Header-list {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   align-items: center;
+}
+.Header-item {
+   width: 100px;
+   font-size: 28px;
+   text-align: center;
+   text-transform: lowercase;
+   color: #b5bac1;
+}
+.Header-item:hover {
+   background-color: #43444b;
+   color: white;
+   border-radius: 5px;
+}
