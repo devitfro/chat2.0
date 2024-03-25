@@ -1,11 +1,11 @@
 import React from "react";
 import './UsersList.css';
-import userIcon from './user_icon.png'
-import closeIcon from './close_icon.svg'
+import userIcon from './img/user_icon.png'
+import closeIcon from './img/close_icon.svg'
 import { useState } from 'react';
 
 const users = [
-   {name: 'Gisoxy', isOnline: false, id: 1, icon: userIcon, closeIcon: closeIcon},
+   {name: 'Gisoxy', isOnline: false, id: 1, icon: userIcon, closeIcon: closeIcon, openChat: false},
    {name: 'Pingvin', isOnline: false, id: 2, icon: userIcon},
 ];
 
@@ -14,6 +14,12 @@ function UsersList() {
 
    function handleClick(userId) {
       setSelectedUserClass(userId);
+      
+      // openChat();
+   }
+
+   function openChat() {
+
    }
 
    const userItems = users.map(user => (

@@ -9,7 +9,6 @@ function App() {
             <h1 className="App-header-text">Hello from our chat</h1>
             <Menu />
          </header>
-         {/* <body className="App-body"></body> */}
          <Body />
       </div>
    );
